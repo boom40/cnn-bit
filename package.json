@@ -1,0 +1,23 @@
+{
+  "name": "marketevo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server ./public -c-1",
+    "deploy": "gh-pages -d public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "http": "0.0.0",
+    "sass": "^1.25.0",
+    "server": "^1.0.22"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  }
+}

@@ -1,0 +1,24 @@
+.button {
+  padding: 15px;
+  width: 302px;
+  border-radius: 28px;
+  background-image: linear-gradient(0deg, #ff6a52 0%, #fd3575 100%);
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 2px;
+  margin-bottom: 40px;
+  outline: none;
+  border: 1px solid #eceef1;
+
+  &:hover {
+    color: rgb(7, 37, 56); 
+  }
+
+  @media (max-width: 650px){
+    display: block;
+    margin: 2px auto 40px;
+  }
+}

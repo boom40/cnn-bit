@@ -1,0 +1,32 @@
+.featured {
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 14px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    padding: 5px 60px;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &__logo {
+      flex-direction: column;
+      height: 180px;
+    }
+  }
+}
