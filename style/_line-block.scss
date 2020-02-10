@@ -1,0 +1,25 @@
+.line-block {
+  width: 100%;
+
+  &--black {
+    height: 160px;
+    background-color: #000;
+    position: absolute;
+    bottom: -25px;
+    z-index: 2;
+
+    @media (max-width: 650px) {
+      height: 200px;
+      bottom: 0px;
+    }
+    @media (max-width: 500px) {
+      height: 170px;
+      bottom: -50px;
+    }
+  }
+
+  &--blue {
+    background-color:rgb(21,3,101);
+    height: 125px;
+  }
+}

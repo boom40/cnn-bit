@@ -1,0 +1,45 @@
+.slider {
+  position: absolute;
+  bottom: 45px;
+  overflow: hidden;
+  transition: 0.7s;
+  transition-timing-function: linear;
+  display: flex;
+}
+
+.cards {
+  width: 235px;
+  max-height: 125px;
+  padding: 20px 20px 23px;
+  margin-right: 40px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 9px rgba(62,39,157,0.4));
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  &__name {
+    font-weight: 800;
+    font-size: 19px;
+    margin-bottom: 7px;
+
+  }
+
+  &__currency {
+    font-weight: 700;
+    color: #6b6b6b;
+    font-size: 17px;
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 30px;
+    color: #f93175;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -10px;
+  }
+}

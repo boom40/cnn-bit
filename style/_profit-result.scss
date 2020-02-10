@@ -1,0 +1,208 @@
+.profit-result {
+  background-image: url('../images/background_2.svg');
+  width: 800px;
+  height: 610px;
+  margin-right: 40px;
+  position: relative;
+
+  &__container {
+    display: flex;
+
+    &--2020 {
+      width: 191px;
+      height: 192px;
+      background-image: url("../images/range-big.png");
+      position: absolute;
+      right: 30px;
+      top: 40px;
+    }
+
+    &--2018 {
+      width: 137px;
+      height: 138px;
+      background-image: url("../images/range-middle.png");
+      position: absolute;
+      right: 206px;
+      top: 167px;
+    }
+
+    &--2015 {
+      width: 137px;
+      height: 138px;
+      background-image: url("../images/range-middle.png");
+      position: absolute;
+      right: 241px;
+      top: 316px;
+    }
+
+    &--2013 {
+      width: 89px;
+      height: 89px;
+      background-image: url("../images/range-small.png");
+      position: absolute;
+      right: 423px;
+      top: 387px;
+    }
+  }
+
+  &__arrow {
+    width: 585px;
+    height: 495px;
+    background-image: url("../images/arrow.svg");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__range {
+    margin: auto;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    transition: 1s all ease;
+
+    &:hover {
+      transform: rotate(360deg);
+      background-color: rgb(6, 117, 6);
+    }
+
+    &--big {
+      padding: 45px 35px;
+      width: 158px;
+      height: 158px;
+      font-size: 27px;
+    }
+
+    &--middle {
+      font-size: 20px;
+      width: 114px;
+      height: 114px;
+      padding: 32px 27px 39px;
+    }
+
+    &--small {
+      font-size: 14px;
+      width: 74px;
+      height: 74px;
+      padding: 19px 19px 22px;
+    }
+  }
+
+  &__year {
+    color: rgb(243, 71, 128);
+    font-weight: 400;
+  }
+
+  &__price {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    bottom: 11px;
+    left: 37px;
+
+  }
+
+  @media (max-width: 850px) {
+    width: 600px;
+    height: 410px;
+    margin-right: 0;
+    background-size: contain;
+
+    &__arrow {
+      width: 405px;
+      height: 305px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: static;
+      text-align: right;
+      margin: 50px auto;
+    }
+
+    &__container {
+      &--2020 {
+        width: 131px;
+        height: 132px;
+        background-size: contain;
+        right: 150px;
+        top: 40px;
+      }
+  
+      &--2018 {
+        width: 97px;
+        height: 98px;
+        background-size: contain;
+        right: 256px;
+        top: 147px;
+      }
+  
+      &--2015 {
+        width: 97px;
+        height: 98px;
+        background-size: contain;
+        right: 261px;
+        top: 250px;
+      }
+  
+      &--2013 {
+        width: 69px;
+        height: 69px;
+        background-size: contain;
+        right: 363px;
+        top: 337px;
+      }
+    }
+
+    &__range {
+      margin: auto;
+      background-color: #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+  
+      &--big {
+        padding: 25px 15px;
+        width: 108px;
+        height: 108px;
+        font-size: 20px;
+      }
+  
+      &--middle {
+        font-size: 14px;
+        width: 84px;
+        height: 84px;
+        padding: 20px;
+      }
+  
+      &--small {
+        font-size: 10px;
+        width: 54px;
+        height: 54px;
+        padding: 15px 25px;
+      }
+    }
+
+    &__text {
+      bottom: 0;
+      left: 110px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__text {
+      bottom: 0;
+      left: 210px;
+    }
+  }
+}
